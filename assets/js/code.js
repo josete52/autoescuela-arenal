@@ -30,4 +30,23 @@ $(function() {
     var imgWidth = $carousel.find('img').first().outerWidth(true);
     $carousel.animate({ scrollLeft: $carousel.scrollLeft() + imgWidth }, 300);
   });
+
+  // Hamburger menu toggle
+  $('#headerHamburger').on('click keypress', function(e) {
+    if (e.type === 'click' || e.key === 'Enter' || e.key === ' ') {
+      $('#headerMenu').toggleClass('show');
+    }
+  });
+  // Close menu when clicking outside
+  $(document).on('click', function(e) {
+    if (!$(e.target).closest('#headerMenu, #headerHamburger').length) {
+      $('#headerMenu').removeClass('show');
+    }
+  });
+  // Close menu on Escape
+  $(document).on('keydown', function(e) {
+    if (e.key === 'Escape') {
+      $('#headerMenu').removeClass('show');
+    }
+  });
 });
