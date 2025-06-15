@@ -1,0 +1,16 @@
+.brand-bg {
+  background-color: #EC7132 !important;
+}
+
+.brand-text {
+  color: #EC7132 !important;
+}
+
+.hero-headline {
+  color: #fff;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 10px 10px 9.7px rgba(0,0,0,0.3);
+}
