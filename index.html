@@ -3,11 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Autoescuela Arenal</title>
+    <meta name="description" content="Autoescuela Arenal es una autoescuela de Madrid que ofrece cursos de conducción para todos los niveles. Con más de 100 años de experiencia, nos especializamos en la formación de conductores responsables y competentes.">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css">
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="./assets/js/code.js"></script>
+    <!-- Generado con https://favicon.io/ -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
 </head>
 <body>
     <!-- Header Start -->
@@ -23,10 +29,10 @@
       </div>
       <!-- Menu -->
       <nav class="header-menu" id="headerMenu">
-        <a href="#" class="header-menu-item">¿Quiénes Somos?</a>
-        <a href="#" class="header-menu-item">Carnets</a>
-        <a href="#" class="header-menu-item">Galeria</a>
-        <a href="#" class="header-menu-item">Contacto</a>
+        <a href="#quienes-somos" class="header-menu-item">¿Quiénes Somos?</a>
+        <a href="#carnets" class="header-menu-item">Carnets</a>
+        <a href="#galeria" class="header-menu-item">Galeria</a>
+        <a href="#contacto" class="header-menu-item">Contacto</a>
         <a href="#" class="header-menu-item">Blog</a>
       </nav>
       <!-- Logo -->
@@ -61,7 +67,7 @@
     <!-- White Band Section End -->
 
     <!-- Three Columns Section Start -->
-    <section class="w-100" style="background-color: #fffaf1;">
+    <section id="carnets" class="w-100" style="background-color: #fffaf1;">
       <div class="container-xxl px-0">
         <div class="row g-0 border-top border-bottom">
           <!-- Left Column -->
@@ -96,7 +102,7 @@
     <!-- Image Hero Section End -->
 
     <!-- 100 Years Journey Section Start -->
-    <section class="w-100 position-relative py-5" style="background-color: #fffaf1; background-image: url('./assets/images/background-patterns.png'); background-size: cover; background-repeat: repeat; background-position: center;">
+    <section id="quienes-somos" class="w-100 position-relative py-5" style="background-color: #fffaf1; background-image: url('./assets/images/background-patterns.png'); background-size: cover; background-repeat: repeat; background-position: center;">
       <div class="container-xxl px-4">
         <div class="row align-items-center flex-column flex-lg-row g-5">
           <!-- Left Column: Text -->
@@ -108,14 +114,14 @@
           </div>
           <!-- Right Column: Image -->
           <div class="col-12 col-lg-6 d-flex justify-content-center align-items-center">
-            <img src="./assets/images/foto_9.jpg" alt="Coches antiguos Autoescuela Arenal" class="img-fluid rounded-4 shadow" style="max-width: 90%; height: auto; border-radius: 60px;">
+            <img src="./assets/images/foto_12.jpg" alt="Coches antiguos Autoescuela Arenal" class="img-fluid rounded-4 shadow" style="max-width: 90%; height: auto; border-radius: 60px;">
           </div>
         </div>
       </div>
     </section>
     <!-- 100 Years Journey Section End -->
     <!-- Carousel Gallery Section Start -->
-    <section class="w-100 bg-white py-4">
+    <section id="galeria" class="w-100 bg-white py-4">
       <div class="container-xxl px-0 position-relative">
         <div class="carousel-gallery" id="carouselGallery">
           <img src="./assets/images/carousel/1.jpg" class="carousel-gallery-img" alt="Galería 1">
@@ -136,7 +142,7 @@
     </section>
     <!-- Carousel Gallery Section End -->
     <!-- Contact Section Start -->
-    <section class="container-xxl">
+    <section id="contacto" class="container-xxl">
       <div class="contact-section mx-auto">
         <form class="contact-form">
           <div class="row g-4">

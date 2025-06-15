@@ -28,7 +28,14 @@ $(function() {
   });
   $('#carouselRight').on('click', function() {
     var imgWidth = $carousel.find('img').first().outerWidth(true);
-    $carousel.animate({ scrollLeft: $carousel.scrollLeft() + imgWidth }, 300);
+    var maxScroll = $carousel[0].scrollWidth - $carousel.outerWidth();
+    var currentScroll = $carousel.scrollLeft();
+    // If at or past the end, go to start
+    if (currentScroll + imgWidth >= maxScroll - 5) {
+      $carousel.animate({ scrollLeft: 0 }, 400);
+    } else {
+      $carousel.animate({ scrollLeft: currentScroll + imgWidth }, 300);
+    }
   });
 
   // Hamburger menu toggle
