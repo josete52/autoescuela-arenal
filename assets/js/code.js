@@ -56,4 +56,64 @@ $(function() {
       $('#headerMenu').removeClass('show');
     }
   });
+
+  // GSAP reusable scroll animations
+  if (window.gsap && window.ScrollTrigger) {
+    // Enter from top
+    gsap.utils.toArray('.anim-top').forEach(function(el) {
+      gsap.from(el, {
+        scrollTrigger: {
+          trigger: el,
+          start: 'top 85%',
+          toggleActions: 'play none none none',
+        },
+        opacity: 0,
+        y: -60,
+        duration: 0.9,
+        ease: 'power3.out',
+      });
+    });
+    // Enter from left
+    gsap.utils.toArray('.anim-left').forEach(function(el) {
+      gsap.from(el, {
+        scrollTrigger: {
+          trigger: el,
+          start: 'top 85%',
+          toggleActions: 'play none none none',
+        },
+        opacity: 0,
+        x: -80,
+        duration: 0.9,
+        ease: 'power3.out',
+      });
+    });
+    // Enter from right
+    gsap.utils.toArray('.anim-right').forEach(function(el) {
+      gsap.from(el, {
+        scrollTrigger: {
+          trigger: el,
+          start: 'top 85%',
+          toggleActions: 'play none none none',
+        },
+        opacity: 0,
+        x: 80,
+        duration: 0.9,
+        ease: 'power3.out',
+      });
+    });
+    // Zoom in from opacity 0
+    gsap.utils.toArray('.anim-zoom').forEach(function(el) {
+      gsap.from(el, {
+        scrollTrigger: {
+          trigger: el,
+          start: 'top 85%',
+          toggleActions: 'play none none none',
+        },
+        opacity: 0,
+        scale: 0.92,
+        duration: 1.1,
+        ease: 'power2.out',
+      });
+    });
+  }
 });
