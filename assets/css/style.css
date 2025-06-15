@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'Tisa Web Pro';
+  src: url('../fonts/ff-tisa-web-pro.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 .brand-bg {
   background-color: #EC7132 !important;
 }
@@ -120,7 +127,7 @@
   font-size: 1.15rem;
   color: #222;
   text-decoration: none;
-  font-family: 'Montserrat', Arial, sans-serif;
+  font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
   font-weight: 400;
   transition: color 0.2s;
 }
@@ -179,4 +186,14 @@
   .header-icon {
     display: none;
   }
+}
+
+body {
+  font-family: 'Tisa Web Pro', serif;
+}
+
+h1, h2, h3, h4, h5, h6,
+.hero-headline,
+.header-menu-item {
+  font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
 }

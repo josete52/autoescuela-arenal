@@ -38,28 +38,24 @@ $(function() {
     }
   });
 
-  // Hamburger menu toggle
   $('#headerHamburger').on('click keypress', function(e) {
     if (e.type === 'click' || e.key === 'Enter' || e.key === ' ') {
       $('#headerMenu').toggleClass('show');
     }
   });
-  // Close menu when clicking outside
   $(document).on('click', function(e) {
     if (!$(e.target).closest('#headerMenu, #headerHamburger').length) {
       $('#headerMenu').removeClass('show');
     }
   });
-  // Close menu on Escape
   $(document).on('keydown', function(e) {
     if (e.key === 'Escape') {
       $('#headerMenu').removeClass('show');
     }
   });
 
-  // GSAP reusable scroll animations
   if (window.gsap && window.ScrollTrigger) {
-    // Enter from top
+    // Elemento entral desde arriba
     gsap.utils.toArray('.anim-top').forEach(function(el) {
       gsap.from(el, {
         scrollTrigger: {
@@ -73,7 +69,7 @@ $(function() {
         ease: 'power3.out',
       });
     });
-    // Enter from left
+    // Elemento entral desde la izquierda
     gsap.utils.toArray('.anim-left').forEach(function(el) {
       gsap.from(el, {
         scrollTrigger: {
@@ -87,7 +83,7 @@ $(function() {
         ease: 'power3.out',
       });
     });
-    // Enter from right
+    // Elemento entral desde la derecha
     gsap.utils.toArray('.anim-right').forEach(function(el) {
       gsap.from(el, {
         scrollTrigger: {
@@ -101,7 +97,7 @@ $(function() {
         ease: 'power3.out',
       });
     });
-    // Zoom in from opacity 0
+    // Zoom in desde la opacidad 0
     gsap.utils.toArray('.anim-zoom').forEach(function(el) {
       gsap.from(el, {
         scrollTrigger: {

@@ -16,12 +16,12 @@
     <link rel="manifest" href="./site.webmanifest">
 </head>
 <body>
-    <!-- Header Start -->
+    <!-- Header -->
     <div class="header-announcement">
       Bienvenido a Autoescuela Arenal fundada en 1920. Más de 100 años enseñando a conducir.
     </div>
     <header class="main-header position-relative">
-      <!-- Hamburger (mobile/tablet) -->
+      <!-- Hamburger (para mobile/tablet) -->
       <div class="header-hamburger d-lg-none" id="headerHamburger" aria-label="Abrir menú" tabindex="0">
         <span></span>
         <span></span>
@@ -33,19 +33,25 @@
         <a href="#carnets" class="header-menu-item">Carnets</a>
         <a href="#galeria" class="header-menu-item">Galeria</a>
         <a href="#contacto" class="header-menu-item">Contacto</a>
-        <a href="#" class="header-menu-item">Blog</a>
+        <a href="https://968921.cargo.site/" class="header-menu-item">Blog</a>
       </nav>
       <!-- Logo -->
-      <img src="./assets/images/logo-arenal.png" alt="Autoescuela Arenal logo" class="header-logo mx-4 mx-lg-5">
+      <picture>
+        <source srcset="./assets/images/logo-arenal.webp" type="image/webp">
+        <img src="./assets/images/logo-arenal.png" alt="Autoescuela Arenal logo" class="header-logo mx-4 mx-lg-5">
+      </picture>
     </header>
-    <!-- Header End -->
+    <!-- Header fin -->
 
-    <!-- Hero Section Start -->
-    <section class="min-vh-100 d-flex align-items-center justify-content-center position-relative" style="background-color: #fffaf1; background-image: url('./assets/images/background-patterns.png'); background-size: cover; background-repeat: repeat; background-position: center;">
+    <!-- Seccion principal -->
+    <section class="min-vh-100 d-flex align-items-center justify-content-center position-relative" style="background-color: #fffaf1; background-image: url('./assets/images/background-patterns.webp'); background-size: cover; background-repeat: repeat; background-position: center;">
       <div class="container position-relative" style="z-index:2;">
         <div class="row align-items-center flex-column flex-md-row g-5 py-5">
           <div class="col-12 col-md-6 d-flex justify-content-center align-items-center">
-            <img src="./assets/images/foto_4.jpg" alt="Coche antiguo Autoescuela Arenal" class="img-fluid rounded-4 shadow" style="max-width: 520px; width: 100%; object-fit: cover;">
+            <picture>
+              <source srcset="./assets/images/foto_4.webp" type="image/webp">
+              <img src="./assets/images/foto_4.jpg" alt="Coche antiguo Autoescuela Arenal" class="img-fluid rounded-4 shadow" style="max-width: 520px; width: 100%; object-fit: cover;">
+            </picture>
           </div>
           <div class="col-12 col-md-6 text-center text-md-start">
             <h1 class="fw-bold display-3 mb-3 anim-top" style="line-height: 1.1;">100 años de caminos<br>compartidos.</h1>
@@ -54,9 +60,9 @@
         </div>
       </div>
     </section>
-    <!-- Hero Section End -->
+    <!-- Seccion principal fin -->
 
-    <!-- White Band Section Start -->
+    <!-- Banda blanca -->
     <section class="bg-white border-bottom py-2 white-band">
       <div class="container-fluid px-0">
         <div class="text-center fw-normal letter-spacing-2 anim-zoom" style="letter-spacing: 0.15em; font-family: 'Georgia', serif; font-size: 1rem;">
@@ -64,48 +70,54 @@
         </div>
       </div>
     </section>
-    <!-- White Band Section End -->
+    <!-- Banda blanca fin -->
 
-    <!-- Three Columns Section Start -->
+    <!-- Tres columnas -->
     <section id="carnets" class="w-100" style="background-color: #fffaf1;">
       <div class="container-xxl px-0">
         <div class="row g-0 border-top border-bottom">
-          <!-- Left Column -->
+          <!-- Columna izquierda -->
           <div class="col-12 col-md-4 d-flex flex-column justify-content-center align-items-center text-start p-5" style="min-height: 350px; border-right: 1px solid #222;">
             <h2 class="fw-bold mb-3 fs-1 text-center anim-left">¿DOS RUEDAS O CUATRO?</h2>
             <p class="mb-4 text-secondary" style="font-size: 1.1rem; letter-spacing: 0.05em;">Tú decides. Nosotros te preparamos.</p>
-            <button class="btn fw-bold px-5 py-2 mt-auto brand-bg" style="color: white; font-size: 1.3rem; border-radius: 8px; font-family: 'Montserrat', 'Arial', sans-serif; letter-spacing: 0.03em;" disabled>MÁS INFORMACIÓN</button>
+            <a href="https://968921.cargo.site/" class="btn fw-bold px-5 py-2 mt-auto brand-bg" style="color: white; font-size: 1.3rem; border-radius: 8px; font-family: 'Montserrat', 'Arial', sans-serif; letter-spacing: 0.03em;" disabled>MÁS INFORMACIÓN</a>
           </div>
-          <!-- Middle Column -->
+          <!-- Columna central -->
           <div class="col-12 col-md-4 d-flex flex-column justify-content-center align-items-center p-5" style="min-height: 350px; border-right: 1px solid #222;">
-            <img src="./assets/images/icono-coche.png" alt="Car icon" class="mb-3" width="100" height="100">
+            <picture>
+              <source srcset="./assets/images/icono-coche.webp" type="image/webp">
+              <img src="./assets/images/icono-coche.png" alt="Car icon" class="mb-3" width="100" height="100">
+            </picture>
             <div class="fw-bold" style="font-size: 1.3rem; font-family: 'Montserrat', 'Arial', sans-serif;">CARNET COCHE</div>
             <div class="text-secondary" style="font-family: 'Courier New', Courier, monospace;">Desde 1000€</div>
           </div>
-          <!-- Right Column -->
+          <!-- Columna derecha -->
           <div class="col-12 col-md-4 d-flex flex-column justify-content-center align-items-center p-5" style="min-height: 350px;">
-            <img src="./assets/images/icono-moto.png" alt="Motorcycle icon" class="mb-3" width="100" height="100">
+            <picture>
+              <source srcset="./assets/images/icono-moto.webp" type="image/webp">
+              <img src="./assets/images/icono-moto.png" alt="Motorcycle icon" class="mb-3" width="100" height="100">
+            </picture>
             <div class="fw-bold" style="font-size: 1.3rem; font-family: 'Montserrat', 'Arial', sans-serif;">CARNET MOTO</div>
             <div class="text-secondary" style="font-family: 'Courier New', Courier, monospace;">Desde 600€</div>
           </div>
         </div>
       </div>
     </section>
-    <!-- Three Columns Section End -->
+    <!-- Tres columnas fin -->
 
-    <!-- Image Hero Section Start -->
-    <section class="position-relative w-100" style="min-height: 400px; background: url('./assets/images/foto_6.jpg') center center / cover no-repeat;">
+    <!-- Imagen principal -->
+    <section class="position-relative w-100" style="min-height: 400px; background: url('./assets/images/foto_6.webp') center center / cover no-repeat;">
       <div class="d-flex justify-content-center align-items-center w-100 h-100" style="min-height: 400px; min-height: 50vh;">
         <h2 class="hero-headline m-0 display-1 display-md-2 display-lg-1 anim-zoom">MUCHO MÁS QUE UNA<br>AUTOESCUELA</h2>
       </div>
     </section>
-    <!-- Image Hero Section End -->
+    <!-- Imagen principal fin -->
 
-    <!-- 100 Years Journey Section Start -->
-    <section id="quienes-somos" class="w-100 position-relative py-5" style="background-color: #fffaf1; background-image: url('./assets/images/background-patterns.png'); background-size: cover; background-repeat: repeat; background-position: center;">
+    <!-- 100 años de viaje -->
+    <section id="quienes-somos" class="w-100 position-relative py-5" style="background-color: #fffaf1; background-image: url('./assets/images/background-patterns.webp'); background-size: cover; background-repeat: repeat; background-position: center;">
       <div class="container-xxl px-4">
         <div class="row align-items-center flex-column flex-lg-row g-5">
-          <!-- Left Column: Text -->
+          <!-- Columna izquierda -->
           <div class="col-12 col-lg-6">
             <h2 class="fw-bold mb-4 anim-left" style="font-size: 2.5rem;">Un viaje de más de 100 años... y los que nos quedan.</h2>
             <div class="anim-zoom">
@@ -114,36 +126,69 @@
                 <p class="mb-0" style="font-size: 1.1rem;">Este no es solo un cambio de imagen: es una declaración de amor por todo lo que hemos vivido... y todo lo que nos queda por vivir juntos.</p>
             </div>
           </div>
-          <!-- Right Column: Image -->
+          <!-- Columna derecha -->
           <div class="col-12 col-lg-6 d-flex justify-content-center align-items-center">
-            <img src="./assets/images/foto_12.jpg" alt="Coches antiguos Autoescuela Arenal" class="img-fluid rounded-4 shadow anim-right" style="max-width: 90%; height: auto; border-radius: 60px;">
+            <picture>
+              <source srcset="./assets/images/foto_12.webp" type="image/webp">
+              <img src="./assets/images/foto_12.jpg" alt="Coches antiguos Autoescuela Arenal" class="img-fluid rounded-4 shadow anim-right" style="max-width: 90%; height: auto; border-radius: 60px;">
+            </picture>
           </div>
         </div>
       </div>
     </section>
-    <!-- 100 Years Journey Section End -->
-    <!-- Carousel Gallery Section Start -->
+    <!-- 100 años de viaje fin -->
+    <!-- Carousel de fotos -->
     <section id="galeria" class="w-100 bg-white py-4 anim-zoom">
       <div class="container-xxl px-0 position-relative">
         <div class="carousel-gallery" id="carouselGallery">
-          <img src="./assets/images/carousel/1.jpg" class="carousel-gallery-img" alt="Galería 1">
-          <img src="./assets/images/carousel/2.jpg" class="carousel-gallery-img" alt="Galería 2">
-          <img src="./assets/images/carousel/3.jpg" class="carousel-gallery-img" alt="Galería 3">
-          <img src="./assets/images/carousel/4.jpg" class="carousel-gallery-img" alt="Galería 4">
-          <img src="./assets/images/carousel/5.jpg" class="carousel-gallery-img" alt="Galería 5">
-          <img src="./assets/images/carousel/6.jpg" class="carousel-gallery-img" alt="Galería 6">
-          <img src="./assets/images/carousel/7.jpg" class="carousel-gallery-img" alt="Galería 7">
-          <img src="./assets/images/carousel/8.jpg" class="carousel-gallery-img" alt="Galería 8">
-          <img src="./assets/images/carousel/9.jpg" class="carousel-gallery-img" alt="Galería 9">
-          <img src="./assets/images/carousel/10.jpg" class="carousel-gallery-img" alt="Galería 10">
+          <picture>
+            <source srcset="./assets/images/carousel/1.webp" type="image/webp">
+            <img src="./assets/images/carousel/1.jpg" class="carousel-gallery-img" alt="Galería 1">
+          </picture>
+          <picture>
+            <source srcset="./assets/images/carousel/2.webp" type="image/webp">
+            <img src="./assets/images/carousel/2.jpg" class="carousel-gallery-img" alt="Galería 2">
+          </picture>
+          <picture>
+            <source srcset="./assets/images/carousel/3.webp" type="image/webp">
+            <img src="./assets/images/carousel/3.jpg" class="carousel-gallery-img" alt="Galería 3">
+          </picture>
+          <picture>
+            <source srcset="./assets/images/carousel/4.webp" type="image/webp">
+            <img src="./assets/images/carousel/4.jpg" class="carousel-gallery-img" alt="Galería 4">
+          </picture>
+          <picture>
+            <source srcset="./assets/images/carousel/5.webp" type="image/webp">
+            <img src="./assets/images/carousel/5.jpg" class="carousel-gallery-img" alt="Galería 5">
+          </picture>
+          <picture>
+            <source srcset="./assets/images/carousel/6.webp" type="image/webp">
+            <img src="./assets/images/carousel/6.jpg" class="carousel-gallery-img" alt="Galería 6">
+          </picture>
+          <picture>
+            <source srcset="./assets/images/carousel/7.webp" type="image/webp">
+            <img src="./assets/images/carousel/7.jpg" class="carousel-gallery-img" alt="Galería 7">
+          </picture>
+          <picture>
+            <source srcset="./assets/images/carousel/8.webp" type="image/webp">
+            <img src="./assets/images/carousel/8.jpg" class="carousel-gallery-img" alt="Galería 8">
+          </picture>
+          <picture>
+            <source srcset="./assets/images/carousel/9.webp" type="image/webp">
+            <img src="./assets/images/carousel/9.jpg" class="carousel-gallery-img" alt="Galería 9">
+          </picture>
+          <picture>
+            <source srcset="./assets/images/carousel/10.webp" type="image/webp">
+            <img src="./assets/images/carousel/10.jpg" class="carousel-gallery-img" alt="Galería 10">
+          </picture>
         </div>
         <!-- Arrows -->
         <button id="carouselLeft" class="btn btn-light position-absolute top-50 start-0 translate-middle-y d-none d-md-block" style="z-index:2; box-shadow:0 2px 8px rgba(0,0,0,0.08);"><span aria-hidden="true">&#8592;</span></button>
         <button id="carouselRight" class="btn btn-light position-absolute top-50 end-0 translate-middle-y d-none d-md-block" style="z-index:2; box-shadow:0 2px 8px rgba(0,0,0,0.08);"><span aria-hidden="true">&#8594;</span></button>
       </div>
     </section>
-    <!-- Carousel Gallery Section End -->
-    <!-- Contact Section Start -->
+    <!-- Carousel de fotos fin -->
+    <!-- Contacto -->
     <section id="contacto" class="container-xxl">
       <div class="contact-section mx-auto anim-zoom">
         <form class="contact-form">
@@ -178,16 +223,19 @@
         </form>
       </div>
     </section>
-    <!-- Contact Section End -->
+    <!-- Contacto fin -->
 
-    <!-- Footer Start -->
+    <!-- Footer -->
     <footer class="bg-black text-white pt-5 pb-3 mt-auto">
       <div class="container-fluid px-4">
         <div class="row align-items-center justify-content-between g-0">
           <div class="col-12 col-md-auto mb-4 mb-md-0 d-flex flex-column align-items-center align-items-md-start">
             <!-- Logo SVG -->
             <div class="mb-3">
-              <img src="./assets/images/logo_white.png" alt="Autoescuela Arenal Logo" width="400">
+              <picture>
+                <source srcset="./assets/images/logo_white.webp" type="image/webp">
+                <img src="./assets/images/logo_white.png" alt="Autoescuela Arenal Logo" width="400">
+              </picture>
             </div>
           </div>
           <div class="col-12 col-md-auto mb-4 mb-md-0 d-flex flex-column align-items-center align-items-md-start">
@@ -225,7 +273,7 @@
         </div>
       </div>
     </footer>
-    <!-- Footer End -->
+    <!-- Footer fin -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
